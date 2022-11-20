@@ -29,12 +29,17 @@ and the x represents the independent variables
 $$X=\begin{bmatrix}x_{0}\\ x_{1}\\ x_{2}\\...\\x_{n}\end{bmatrix}$$
 
 The Correlation-Pearson equation is used to compute the theta, as shown below.
+
 $$\theta_{of_independent_variable} = \frac{\sum_{i=1}^{n} (x_i - \overline{x})(y_i - \overline{y})}{\sqrt{\sum (x_i - \overline{x})^2(y_i - \overline{y})^2}}$$
 
-And the mean is computed using the following equation:
-    $$\bar{x} = \frac{\sum x_{i}}{n}$$
+And the mean is computed using the following equation
 
-To compute the intercept according to equation $$\theta_{0} = \frac{\sum_{i=1}^{n}  (y_{i} - \theta_{i}\times x_{i})} {n}$$
+$$\bar{x} = \frac{\sum x_{i}}{n}$$
+
+To compute the intercept according to equation
+
+$$\theta_{0} = \frac{\sum_{i=1}^{n}  (y_{i} - \theta_{i}\times x_{i})} {n}$$
+
 
 To predict categorical classes using linear regression, we need to set a threshold. Any value above the threshold will be considered (one, or true) even if it is one thousand, and any value below the threshold will be considered zero or false. And this will not give us the probability of belonging to a class that is very desirable. Logistic regression is preferable for solving a linear regression problem with categorical data. The logistic regression algorithm is based on the sigmoid function it also called logistic function, which calculates the likelihood (probability) of belonging to a class instead to reurn the value of y. Sigmoid function it always returns value between 0 and 1. 
 
@@ -92,4 +97,3 @@ $$\theta_{new} = \theta_{old} - \eta \nabla J$$
 2. [Machine learning with Python](https://www.coursera.org/learn/machine-learning-with-python/home/welcome)
 3. [Run Math equations](https://www.symbolab.com/)
 
-$$X=\begin{bmatrix}x_{0}\\ x_{1}\\ x_{2}\\...\\x_{n}\end{bmatrix}$$
